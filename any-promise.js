@@ -2,6 +2,8 @@
 var PROMISE_IMPL = process.env.PROMISE_IMPL,
     undef;
 
+var PROMISE_RANDOM = process.env.PROMISE_RANDOM || process.env.TRAVIS; 
+    
 module.exports = (function(){
   var libs;
   if(PROMISE_IMPL !== undef){
@@ -16,8 +18,16 @@ module.exports = (function(){
       "when",
       "q"];
   }
+  if(PROMISE_RANDOM !== undef){
+      var cut=Math.floor(Math.random()*libs.length);
+      libs = libs.slice(cut,libs.length).concat(libs.slice(0,cut));
+      console.log('=-=-=-=-=-=-=-=-= SELECTED RANDOM Promise LIBRARY',cut);
+  }
   var i = 0, len = libs.length, lib;
   for(; i < len; i++){
+    if(PROMISE_RANDOM !== undef){
+      console.log('=-=-=-=-=-=-=-=-= try',libs[i]);
+    }
     try {
       lib = require(libs[i]);
       if(lib.Promise !== undef){

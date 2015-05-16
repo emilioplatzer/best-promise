@@ -1,15 +1,15 @@
 {
-  "name": "any-promise",
+  "name": "best-promise",
   "version": "0.1.0",
-  "description": "Resolve any installed ES6 compatible promise",
-  "main": "any-promise.js",
+  "description": "select the best promise available at certain moment or leave the choice to the end user",
+  "main": "best-promise.js",
   "browser": "any-promise-shim.js",
   "scripts": {
-    "test": "make test"
+    "test": "mocha --reporter spec --bail --check-leaks test/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kevinbeaty/any-promise"
+    "url": "https://github.com/emilioplatzer/best-promise"
   },
   "keywords": [
     "promise",
@@ -18,9 +18,9 @@
   "author": "Kevin Beaty",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevinbeaty/any-promise/issues"
+    "url": "https://github.com/emilioplatzer/best-promise/issues"
   },
-  "homepage": "http://github.com/kevinbeaty/any-promise",
+  "homepage": "http://github.com/emilioplatzer/best-promise",
   "dependencies": {},
   "devDependencies": {
     "promise": "~6.0.1",

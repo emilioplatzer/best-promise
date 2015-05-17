@@ -23,14 +23,14 @@
   "homepage": "http://github.com/emilioplatzer/best-promise",
   "dependencies": {},
   "devDependencies": {
-    "promise": "~6.0.1",
-    "es6-promise": "~2.0.1",
-    "rsvp": "~3.0.16",
-    "bluebird": "~2.5.3",
-    "when": "~3.6.4",
-    "q": "~1.1.2",
-    "native-promise-only": "~0.7.6-a",
+    "promise": "~7.0.1",
+    "es6-promise": "~2.1.1",
+    "rsvp": "~3.0.18",
+    "bluebird": "~2.9.25",
+    "when": "~3.7.3",
+    "q": "~1.4.0",
+    "native-promise-only": "~0.7.8-a",
     "promises-aplus-tests": "~2.1.0",
-    "mocha": "~2.1.0"
+    "mocha": "~2.2.5"
   }
 }

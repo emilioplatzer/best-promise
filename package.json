@@ -1,6 +1,6 @@
 {
   "name": "best-promise",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "select the best promise available at certain moment or leave the choice to the end user",
   "main": "best-promise.js",
   "browser": "any-promise-shim.js",

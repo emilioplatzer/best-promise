@@ -1,6 +1,6 @@
 {
   "name": "best-promise",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "select the best promise available at certain moment or leave the choice to the end user",
   "main": "best-promise.js",
   "browser": "any-promise-shim.js",
@@ -21,7 +21,9 @@
     "url": "https://github.com/emilioplatzer/best-promise/issues"
   },
   "homepage": "http://github.com/emilioplatzer/best-promise",
-  "dependencies": {},
+  "dependencies": {
+    "promise": "~7.0.1"
+  },
   "devDependencies": {
     "promise": "~7.0.1",
     "es6-promise": "~2.2.0",

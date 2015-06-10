@@ -6,7 +6,7 @@ var PROMISE_RANDOM = process.env.PROMISE_RANDOM || process.env.TRAVIS;
     
 module.exports = (function(){
   var libs;
-  if(PROMISE_IMPL !== undef){
+  if(PROMISE_IMPL !== undef && PROMISE_IMPL !== 'best-promise'){
     libs = [process.env.PROMISE_IMPL];
   } else {
     libs = [

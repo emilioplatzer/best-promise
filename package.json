@@ -1,6 +1,6 @@
 {
   "name": "best-promise",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "select the best promise available at certain moment or leave the choice to the end user",
   "main": "best-promise.js",
   "browser": "any-promise-shim.js",
@@ -24,11 +24,11 @@
   "dependencies": {},
   "devDependencies": {
     "promise": "~7.0.1",
-    "es6-promise": "~2.1.1",
+    "es6-promise": "~2.2.0",
     "rsvp": "~3.0.18",
-    "bluebird": "~2.9.25",
+    "bluebird": "~2.9.27",
     "when": "~3.7.3",
-    "q": "~1.4.0",
+    "q": "~1.4.1",
     "native-promise-only": "~0.7.8-a",
     "promises-aplus-tests": "~2.1.0",
     "mocha": "~2.2.5"

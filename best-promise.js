@@ -22,4 +22,21 @@ Promises.make = function make(functionResolveReject){
     return new Promises.Promise(functionResolveReject);
 }
 
+Promises.wrapErrRes = function wrapErrRes(functionWithCallbackErrRes){
+    return function(){
+        var This=this;
+        var newArguments=Array.prototype.slice.call(arguments,0);
+        return new Promises.Promise(function(resolve, reject){
+            newArguments.push(function(err,ok){
+                if(err){
+                    reject(err);
+                }else{
+                    resolve(ok);
+                }
+            });
+            functionWithCallbackErrRes.apply(This,newArguments);
+        });
+    }
+}
+
 module.exports = Promises;

@@ -71,5 +71,46 @@ describe('Promises', function(){
             }).catch(done);
         });
     });
+    describe('wrapErrRes', function(){
+        var fp;
+        var err;
+        var result;
+        var f;
+        beforeEach(function(){
+            err = null;
+            result = null;
+            f = function(data1, data2, callback){
+                var resolveOrReject=function(){
+                    setTimeout(function(){
+                        if(err){
+                            callback(data1+data2+err);
+                        }if(result){
+                            callback(null,data1+data2+result);
+                        }else{
+                            resolveOrReject();
+                        }
+                    },20);
+                };
+                resolveOrReject();
+            }
+            fp = Promises.wrapErrRes(f);
+        });
+        it('must resolve ok',function(done){
+            result = 9;
+            fp('a','b').then(function(value){
+                expect(value).to.be('ab9');
+                done();
+            }).catch(done);
+        });
+        it('must reject',function(done){
+            err = 'error message';
+            fp('A','B2').then(function(value){
+                done(value);
+            }).catch(function(err){
+                expect(err).to.be('AB2error message');
+                done();
+            }).catch(done);
+        });
+    });
 });
 

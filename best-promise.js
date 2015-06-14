@@ -14,6 +14,10 @@ Promises.reject = function reject(err){
     return Promises.Promise.reject(err);
 };
 
+Promises.all = function all(promises){
+    return Promises.Promise.all(promises);
+};
+
 Promises.make = function make(functionResolveReject){
     return new Promises.Promise(functionResolveReject);
 }

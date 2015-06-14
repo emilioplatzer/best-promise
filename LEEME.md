@@ -50,7 +50,7 @@ o también se puede usar la variable de ambiente `PROMISE_RANDOM` para que sorte
 
 
 ```javascript
-var Promise = require('best-promise');
+var Promise = require('best-promise').Promise;
 
 return Promise
   .all([xf, f, init, coll])
@@ -62,6 +62,28 @@ return new Promise(function(resolve, reject){
   } catch(e){
     reject(e);
   }
+});
+
+```
+
+
+## mejoras
+
+  
+Una forma común de las promesas es empezar la primera función dentro de un then,
+de ese modo si la expresión que arma los parámetros lanza un error 
+se captura dentro de la cadena de promesas
+
+
+```js
+
+var Promises = require('best-promise');
+var fs = require('fs-promise');
+
+Promises.start(function(){
+    return fs.stat(path+path.sep+fileName);
+}).then(function(stat){
+    // ...
 });
 
 ```

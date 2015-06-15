@@ -29,4 +29,4 @@ function rejected(reason){
   return def.promise;
 }
 
-// tests.mocha({deferred:deferred, resolved:resolved, rejected:rejected});
+tests.mocha({deferred:deferred, resolved:resolved, rejected:rejected});

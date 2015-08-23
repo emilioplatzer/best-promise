@@ -34,5 +34,12 @@
     "promises-aplus-tests": "~2.1.1",
     "mocha": "~2.2.5",
     "expect.js": "^0.3.1"
+  },
+  "qa-control": {
+    "package-version": "0.0.1",
+    "coverage": 90,
+    "run-in": "client",
+    "stability": "extending",
+    "type": "lib"
   }
 }

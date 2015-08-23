@@ -32,6 +32,15 @@ describe('Promises', function(){
             done();
         }).catch(done);
     });
+    it('must sleep',function(done){
+        var start=new Date();
+        Promises.sleep(100).then(function(){
+            var now=new Date();
+            var elapsed=Math.abs(now.getTime()-start.getTime()-100);
+            expect(elapsed).to.be.lessThan(20);
+            done();
+        }).catch(done);
+    });
     describe('make', function(){
         var p;
         var err;

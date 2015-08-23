@@ -39,4 +39,10 @@ Promises.wrapErrRes = function wrapErrRes(functionWithCallbackErrRes){
     }
 }
 
+Promises.sleep = function sleep(milliseconds){
+    return Promises.make(function(resolve){
+        setTimeout(resolve,milliseconds);
+    });
+}
+
 module.exports = Promises;

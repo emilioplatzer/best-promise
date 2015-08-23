@@ -1,6 +1,6 @@
 {
   "name": "best-promise",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "select the best promise available at certain moment or leave the choice to the end user",
   "main": "best-promise.js",
   "browser": "any-promise-shim.js",
@@ -22,16 +22,16 @@
   },
   "homepage": "http://github.com/emilioplatzer/best-promise",
   "dependencies": {
-    "promise": "~7.0.1"
+    "promise": "~7.0.3"
   },
   "devDependencies": {
     "es6-promise": "~2.3.0",
-    "rsvp": "~3.0.18",
-    "bluebird": "~2.9.27",
+    "rsvp": "~3.0.20",
+    "bluebird": "~2.9.34",
     "when": "~3.7.3",
     "q": "~1.4.1",
     "native-promise-only": "~0.8.0-a",
-    "promises-aplus-tests": "~2.1.0",
+    "promises-aplus-tests": "~2.1.1",
     "mocha": "~2.2.5",
     "expect.js": "^0.3.1"
   }

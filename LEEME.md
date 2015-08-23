@@ -25,11 +25,11 @@ también disponible en:
 [![inglés](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-en.png)](README.md)
 
 
-***Basado en [any-promise](npmjs.org/package/any-promise)***
+***Basado en [any-promise](https://npmjs.org/package/any-promise)***
 
 Cuando se usa con Travis-CI ***best-promise*** seleccionará al azar una librería Promise. 
 
-En el resto de los casos funciona igual que [any-promise](npmjs.org/package/any-promise).
+En el resto de los casos funciona igual que [any-promise](https://npmjs.org/package/any-promise).
 
 La lista de módulos Promise es:
 

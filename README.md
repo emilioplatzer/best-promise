@@ -16,21 +16,21 @@ also available in:
 
 <!--lang:en-->
 
-***Based on [any-promise](npmjs.org/package/any-promise)***
+***Based on [any-promise](https://npmjs.org/package/any-promise)***
 
 When testing with Travis-CI ***best-promise*** selects a promise library randomly.
 
-In the rest of cases it will work identically to [any-promise](npmjs.org/package/any-promise).
+In the rest of cases it will work identically to [any-promise](https://npmjs.org/package/any-promise).
 
 When normal use attempts to load libraries in the following order:
 
 <!--lang:es--]
 
-***Basado en [any-promise](npmjs.org/package/any-promise)***
+***Basado en [any-promise](https://npmjs.org/package/any-promise)***
 
 Cuando se usa con Travis-CI ***best-promise*** seleccionará al azar una librería Promise. 
 
-En el resto de los casos funciona igual que [any-promise](npmjs.org/package/any-promise).
+En el resto de los casos funciona igual que [any-promise](https://npmjs.org/package/any-promise).
 
 La lista de módulos Promise es:
 

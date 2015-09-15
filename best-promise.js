@@ -10,6 +10,10 @@ Promises.start = function then(f){
     return Promises.Promise.resolve().then(f);
 };
 
+Promises.resolve = function resove(err){
+    return Promises.Promise.resolve(err);
+};
+
 Promises.reject = function reject(err){
     return Promises.Promise.reject(err);
 };

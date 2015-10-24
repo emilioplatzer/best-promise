@@ -22,23 +22,28 @@
   },
   "homepage": "http://github.com/emilioplatzer/best-promise",
   "dependencies": {
-    "promise": "~7.0.3"
+    "promise": "7.0.4"
   },
   "devDependencies": {
-    "es6-promise": "~2.3.0",
-    "rsvp": "~3.0.20",
-    "bluebird": "~2.9.34",
-    "when": "~3.7.3",
-    "q": "~1.4.1",
-    "native-promise-only": "~0.8.0-a",
-    "promises-aplus-tests": "~2.1.1",
-    "mocha": "~2.2.5",
-    "expect.js": "^0.3.1"
+    "es6-promise": "3.0.2",
+    "rsvp": "3.1.0",
+    "bluebird": "2.10.2",
+    "when": "3.7.4",
+    "q": "1.4.1",
+    "native-promise-only": "0.8.1",
+    "promises-aplus-tests": "2.1.1",
+    "mocha": "2.3.3",
+    "expect.js": "0.3.1"
+  },
+  "jshintConfig": {
+    "asi": false,
+    "curly": true,
+    "forin": true
   },
   "qa-control": {
     "package-version": "0.0.1",
-    "coverage": 90,
-    "run-in": "client",
+    "coverage": 0,
+    "run-in": "server",
     "stability": "extending",
     "type": "lib"
   }

@@ -1,4 +1,10 @@
 "use strict";
+/*jshint eqnull:true */
+/*jshint globalstrict:true */
+/*jshint node:true */
+
+/* global Promise */
+
 var PROMISE_IMPL = process.env.PROMISE_IMPL,
     undef;
 

@@ -1,4 +1,11 @@
-var Promises = {};
+"use strict";
+/*jshint eqnull:true */
+/*jshint globalstrict:true */
+/*jshint node:true */
+
+var bestPromise = {};
+
+var Promises = bestPromise;
 
 Promises.Promise = require('./any-promise.js');
 process.env.PROMISE_IMPL = 'best-promise';
@@ -24,7 +31,7 @@ Promises.all = function all(promises){
 
 Promises.make = function make(functionResolveReject){
     return new Promises.Promise(functionResolveReject);
-}
+};
 
 Promises.wrapErrRes = function wrapErrRes(functionWithCallbackErrRes){
     return function(){
@@ -40,13 +47,13 @@ Promises.wrapErrRes = function wrapErrRes(functionWithCallbackErrRes){
             });
             functionWithCallbackErrRes.apply(This,newArguments);
         });
-    }
-}
+    };
+};
 
 Promises.sleep = function sleep(milliseconds){
     return Promises.make(function(resolve){
         setTimeout(resolve,milliseconds);
     });
-}
+};
 
 module.exports = Promises;

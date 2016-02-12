@@ -41,7 +41,7 @@ When testing with Travis-CI ***best-promise*** selects a promise library randoml
 
 In the rest of cases it will work identically to [any-promise](https://npmjs.org/package/any-promise).
 
-When normal use attempts to load libraries in the following order:
+When normal use, attempts to load libraries in the following order:
 
 [!--lang:*-->
 
@@ -101,7 +101,9 @@ se captura dentro de la cadena de promesas
 
 <!--lang:en--]
   
-You can abrevite the common tasks
+You can abrevite the common tasks by begining with the first function inside a `then`,
+that way if the expression that assembles the parameters throws an error,
+it is captured in the promise chain.
 
 [!--lang:*-->
 

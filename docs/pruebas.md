@@ -1,4 +1,4 @@
-<style>
+<style >
   * {color:red}
 </style>
 

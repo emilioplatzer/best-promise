@@ -1,5 +1,8 @@
-<style >
-  * {color:red}
+<style
+  type="text/css">
+h1 {color:red;}
+
+p {color:blue;}
 </style>
 
 Here is a simple flow chart:

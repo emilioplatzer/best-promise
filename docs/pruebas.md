@@ -1,5 +1,5 @@
 <style>
-*{color:red}
+  * {color:red}
 </style>
 
 Here is a simple flow chart:
